@@ -15,7 +15,7 @@ def kmeans(x,k,typ,n_init=10,max_iter=500,tol=0.0001):
         
         flabel=np.zeros((n_init,np.size(x,1)))
         error=np.zeros(n_init)
-        fmeu=np.zeros((2,k,n_init))
+        fmeu=np.zeros((x.shape[0],k,n_init))
             
         for j in range(n_init):
             
@@ -60,7 +60,7 @@ def kmeans(x,k,typ,n_init=10,max_iter=500,tol=0.0001):
         
         flabel=np.zeros((n_init,np.size(x,1)))
         error=np.zeros(n_init)
-        fmeu=np.zeros((2,k,n_init))
+        fmeu=np.zeros((x.shape[0],k,n_init))
             
         for j in range(n_init):
         
@@ -101,7 +101,7 @@ def kmeans(x,k,typ,n_init=10,max_iter=500,tol=0.0001):
         
         flabel=np.zeros((n_init,np.size(x,1)))
         error=np.zeros(n_init)
-        fmeu=np.zeros((2,k,n_init))
+        fmeu=np.zeros((x.shape[0],k,n_init))
             
         for j in range(n_init):
             
